@@ -1,0 +1,505 @@
+/* ---------------------- responsive design start --------------------------  */
+// 1199px responsive  start
+@media (max-width: 1199px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 1.3rem;
+  }
+  .g-4,
+  .gx-4 {
+    --bs-gutter-x: 1.3rem;
+  }
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .section-title-area {
+    margin-bottom: 40px;
+  }
+  .navbar-nav {
+    margin-right: 30px;
+    .nav-link {
+      padding: 0 12px !important;
+    }
+  }
+  .achievement-details-title {
+    font-size: 28px;
+  }
+  .achievement-item {
+    margin-right: 25px;
+  }
+  .achievement-details-img {
+    margin-right: 12px;
+  }
+  .service-title {
+    margin-bottom: 30px;
+  }
+  .project-img-area {
+    height: 250px;
+  }
+  .experience-title-area {
+    display: block;
+  }
+  .experience-title {
+    margin-bottom: 10px;
+  }
+  .banner-title {
+    font-size: 65px;
+  }
+  .demo-logo-area {
+    margin-bottom: 20px;
+  }
+  .demo-img-area {
+    height: 550px;
+  }
+}
+// 1199px responsive  end
+
+// 991px responsive  start
+@media (max-width: 991px) {
+  .section-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .header-section-2 {
+    .navbar-collapse {
+      background-color: $main-bg-3;
+    }
+  }
+  .navbar-nav {
+    margin-right: 0;
+    margin-bottom: 25px;
+    display: block;
+    width: 100%;
+    .nav-link {
+      padding: 0 !important;
+      font-size: 18px;
+      &.active {
+        &::after {
+          transform: rotate(-90deg);
+          bottom: 0;
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+  }
+  .navbar {
+    .btn-1 {
+      background-color: $bg-2;
+    }
+  }
+  .nav-item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .navbar-toggler {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    font-size: 0;
+    &:focus {
+      box-shadow: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+  .navbar-toggler-icon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .collapse:not(.show) {
+    display: flex;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    padding: 100px 30px 30px 30px;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: -300px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    background: $bg-2;
+    transition: 0.2s;
+    &.show {
+      right: 0;
+    }
+  }
+  .navbar-close-btn {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    i {
+      font-size: 35px;
+      color: #fff;
+    }
+  }
+  .header-logo {
+    width: 150px;
+  }
+  .banner-title-top {
+    text-align: center;
+  }
+  .banner-title {
+    text-align: center;
+    font-size: 65px;
+  }
+  .banner-details {
+    text-align: center;
+  }
+  .banner-social {
+    justify-content: center;
+  }
+  .banner-section {
+    .ps-5 {
+      padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .banner-img-area {
+    margin-top: 50px;
+  }
+  .achievement-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .achievement-details-area {
+    justify-content: center;
+  }
+  .about-section {
+    .ps-5 {
+      padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+  }
+  .about-img-area {
+    text-align: center;
+  }
+
+  .about-img-area {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 42px;
+  }
+  .section-title-area-2 {
+    margin-bottom: 15px !important;
+  }
+  .about-contact-details {
+    margin-bottom: 30px;
+  }
+  .service-section {
+    .ps-5 {
+      padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+  }
+  .service-title {
+    margin-top: 20px;
+  }
+  .service-number-area {
+    display: flex;
+    align-items: center;
+  }
+  .service-number {
+    margin-right: 25px;
+    font-size: 120px;
+  }
+  .service-item-title {
+    margin-bottom: 0;
+  }
+  .service-item {
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-section {
+    .col-lg-8 {
+      margin-top: 30px;
+      &.ps-4 {
+        padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+      }
+    }
+  }
+  .contact-title {
+    font-size: 32px;
+  }
+  .experience-item-area {
+    &::before {
+      display: none;
+    }
+  }
+  .experience-item-dot {
+    display: none;
+  }
+  .experience-item-area-title {
+    margin-bottom: 0;
+  }
+  .experience-details-area {
+    margin-left: 0;
+  }
+  .experience-title-area {
+    display: flex;
+  }
+}
+// 991px responsive  end
+
+// 767px responsive  start
+@media (max-width: 767px) {
+  .section-padding {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .banner-section {
+    padding-top: 120px;
+  }
+  .achievement-item {
+    margin-bottom: 20px;
+  }
+  .service-title {
+    margin-bottom: 25px;
+  }
+  .service-number-details {
+    font-size: 28px;
+  }
+  .footer-title {
+    font-size: 32px;
+  }
+}
+// 767px responsive  end
+
+// 575px responsive  start
+@media (max-width: 575px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 1rem;
+  }
+  .g-4,
+  .gx-4 {
+    --bs-gutter-x: 1rem;
+  }
+  .g-5,
+  .gy-5 {
+    --bs-gutter-y: 1.5rem;
+  }
+  .g-5,
+  .gx-5 {
+    --bs-gutter-x: 1.5rem;
+  }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .header-section {
+    padding: 12px 0;
+  }
+  .navbar {
+    .row {
+      .col-xm-8 {
+        width: 65%;
+      }
+      .col-xm-4 {
+        width: 35%;
+      }
+    }
+  }
+  .navbar-toggler {
+    width: 35px;
+    height: 25px;
+  }
+  .banner-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .banner-img-area {
+    max-width: 450px;
+  }
+  .banner-title-top {
+    font-size: 20px;
+  }
+  .banner-details {
+    font-size: 22px;
+  }
+  .achievement-title {
+    font-size: 28px;
+  }
+  .about-contact-details {
+    margin-bottom: 20px;
+  }
+  .service-number {
+    font-size: 100px;
+    margin-right: 0;
+    span {
+      font-size: 100px;
+    }
+  }
+  .service-title {
+    font-size: 32px;
+  }
+  .service-item-title {
+    font-size: 18px;
+  }
+  .service-item {
+    padding: 15px;
+  }
+  .service-item-img {
+    max-width: 70px;
+  }
+  .service-number-area {
+    display: block;
+  }
+  .service-number-details {
+    font-size: 22px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .section-title-area {
+    margin-bottom: 30px;
+  }
+  .project-img-area {
+    height: 230px;
+  }
+  .experience-item-area {
+    padding: 20px;
+  }
+  .experience-title-area {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .experience-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .experience-title-details {
+    font-size: 18px;
+  }
+  .contact-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .footer-bottom {
+    padding: 15px 0;
+  }
+  .footer-section-top {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .footer-social-link {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+  .header-logo {
+    width: 135px;
+  }
+  .banner-title {
+    font-size: 42px;
+  }
+  .achievement-details-img {
+    max-width: 40px;
+  }
+  .achievement-details-title {
+    font-size: 24px;
+  }
+  .service-title {
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .progress-wrap {
+    height: 45px;
+    width: 45px;
+    &::after {
+      font-size: 17px;
+    }
+  }
+  .experience-item-area-title {
+    font-size: 26px;
+  }
+  .template-style-area {
+    padding: 15px 10px 10px 10px;
+  }
+  .demo-title-area {
+    margin-bottom: 40px;
+    margin-top: 70px;
+  }
+  .demo-logo {
+    width: 180px;
+  }
+  .demo-title-details {
+    font-size: 16px;
+  }
+  .demo-title-area {
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  .demo-img-area {
+    height: 300px;
+  }
+  .features-section {
+    &.px-5 {
+      padding-left: unset !important;
+      padding-right: unset !important;
+    }
+  }
+  .about-contact-details-item-text-1 {
+    width: auto;
+  }
+  .about-details {
+    font-size: 16px;
+  }
+  .about-contact-details-item {
+    span {
+      margin-right: 10px;
+    }
+  }
+}
+// 575px responsive  end
+
+// 400px responsive  start
+@media (max-width: 400px) {
+  .banner-img-area {
+    margin-top: 40px;
+  }
+  .achievement-section {
+    padding: 25px 0 0 0;
+  }
+}
+// 400px responsive  end
+/* ---------------------- responsive design end --------------------------  */
